@@ -3,23 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>New Document</title>
+    <style>
+        .one{
+        width: 100px;
+            height: 20px;
+            border: 1px solid red;
+            margin-top: 3px;
+        }
+    
+    </style>
 </head>
 <body>
-    <h1>Hello world</h1>
-    <h2>Hello world</h2>
-    <h3>Hello world</h3>
-    <h4>Hello world</h4>
-    <h5>Hello world</h5> 
-    <h6>Hello world</h6> 
-    <p>Ho-ho-ho-ho</p>
-    <p>Ho-ho-ho-ho</p>
-    <p>Ho-ho-ho-ho</p>
-    <p>Ho-ho-ho-ho</p>
-    <p>Ho-ho-ho-ho</p>
-    <p>Ho-ho-ho-ho</p>
-    <p>Ho-ho-ho-ho</p>
-    <p>Ho-ho-ho-ho</p>
-    <p>Ho-ho-ho-ho</p>
+<input type="text" value="1" class="one">
+<input type="text" value="2" class="one">
+<input type="text" value="3" class="one">
+<input type="text" value="4" class="one">
+<input type="text" value="5" class="one">
+<script>
+   
+  
+     var one=document.getElementsByClassName('one');
+    for(var i=0;i<5;i++){
+       console.log(one[i].value);
+        }
     
+          
+   
+        
+       
+       
+   
+    
+    
+    </script>
 </body>
 </html>
