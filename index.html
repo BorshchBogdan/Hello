@@ -1,40 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>New Document</title>
     <style>
-        .one{
-        width: 100px;
+        .one {
+            width: 100px;
             height: 20px;
             border: 1px solid red;
             margin-top: 3px;
         }
-    
+
     </style>
 </head>
+
 <body>
-<input type="text" value="1" class="one">
-<input type="text" value="2" class="one">
-<input type="text" value="3" class="one">
-<input type="text" value="4" class="one">
-<input type="text" value="5" class="one">
-<script>
-   
-  
-     var one=document.getElementsByClassName('one');
-    for(var i=0;i<5;i++){
-       console.log(one[i].value);
+    <input type="text" value="1" class="one">
+    <input type="text" value="2" class="one">
+    <input type="text" value="3" class="one">
+    <input type="text" value="4" class="one">
+    <input type="text" value="5" class="one">
+    <script>
+        var one = document.getElementsByClassName('one');
+
+        for (var i = 0; i < one.length; i++) {
+            one[i].onclick = function() {
+                console.log(this.value);
+            }
+
         }
-    
-          
-   
-        
-       
-       
-   
-    
-    
+
     </script>
 </body>
+
 </html>
